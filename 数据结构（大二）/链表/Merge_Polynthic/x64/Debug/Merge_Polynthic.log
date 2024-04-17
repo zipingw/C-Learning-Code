@@ -1,0 +1,3 @@
+﻿  Merge_Polynthic.cpp
+D:\undergraduate\大二上\数据结构\链表\Merge_Polynthic\Merge_Polynthic.cpp(71,24): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  Merge_Polynthic.vcxproj -> D:\undergraduate\大二上\数据结构\链表\Merge_Polynthic\x64\Debug\Merge_Polynthic.exe

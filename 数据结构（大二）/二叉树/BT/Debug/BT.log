@@ -1,0 +1,6 @@
+﻿  BT.cpp
+D:\undergraduate\大二上\数据结构\二叉树\BT\BT.cpp(88,20): warning C4018: “<”: 有符号/无符号不匹配
+  test.cpp
+  正在生成代码...
+D:\undergraduate\大二上\数据结构\二叉树\BT\BT.cpp(65): warning C4715: “BT::Insert”: 不是所有的控件路径都返回值
+  BT.vcxproj -> D:\undergraduate\大二上\数据结构\二叉树\BT\Debug\BT.exe

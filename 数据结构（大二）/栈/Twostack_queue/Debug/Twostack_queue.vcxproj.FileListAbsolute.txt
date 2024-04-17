@@ -1,0 +1,2 @@
+D:\undergraduate\大二上\数据结构\Twostack_queue\Debug\Twostack_queue.exe
+D:\undergraduate\大二上\数据结构\Twostack_queue\Debug\Twostack_queue.pdb

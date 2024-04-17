@@ -1,0 +1,250 @@
+一、月份天数
+#include <iostream>
+using namespace std;
+int main(){
+	int m,n;
+    while(cin>>m>>n){
+    	if(m==0&&n==0){
+    		break;
+		}
+    	if(n>12||n<0){
+    		cout<<"ERROR"<<endl;
+		}
+		if((m%400==0)||(m%100!=0&&m%4==0)){
+    		switch(n){
+    			case 1:cout<<"31"<<endl;break;
+    			case 2:cout<<"29"<<endl;break;
+    			case 3:cout<<"31"<<endl;break;
+    			case 4:cout<<"30"<<endl;break;
+    			case 5:cout<<"31"<<endl;break;
+    			case 6:cout<<"30"<<endl;break;
+    			case 7:cout<<"31"<<endl;break;
+    			case 8:cout<<"31"<<endl;break;
+    			case 9:cout<<"30"<<endl;break;
+    			case 10:cout<<"31"<<endl;break;
+    			case 11:cout<<"30"<<endl;break;
+    			case 12:cout<<"31"<<endl;break;
+    			}
+    			}
+		else{
+			switch(n){
+    			case 1:cout<<"31"<<endl;break;
+    			case 2:cout<<"28"<<endl;break;
+    			case 3:cout<<"31"<<endl;break;
+    			case 4:cout<<"30"<<endl;break;
+    			case 5:cout<<"31"<<endl;break;
+    			case 6:cout<<"30"<<endl;break;
+    			case 7:cout<<"31"<<endl;break;
+    			case 8:cout<<"31"<<endl;break;
+    			case 9:cout<<"30"<<endl;break;
+    			case 10:cout<<"31"<<endl;break;
+    			case 11:cout<<"30"<<endl;break;
+    			case 12:cout<<"31"<<endl;break;
+		}
+		
+	}
+} 
+return 0;
+}
+
+
+
+数星星
+#include<iostream>
+using namespace std;
+int main(){
+	int m,n;
+	char c;
+	int s;
+	int sum;
+	while(cin>>m>>n){
+		if(m==0&&n==0){
+			break;
+		}
+		else{
+		      sum=0;
+		      s=0;
+		      
+			   while(cin>>c  )	{
+		        if(c=='*'){sum+=1;}
+			   s+=1;
+			   if(s>=m*n){
+			   	break;
+			   }
+	          }
+	          cout<<sum<<endl;
+		}
+		
+	}
+			
+	return 0;
+}
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+	int m,n;
+	int max;min;
+	while (cin>>n){
+		for(int i=1;i<=n;i++){
+			cin>>m;
+			max=m;max=m;
+		}
+	}
+}
+
+
+评委打分
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+	int m,n;
+	double max,min;
+	double s;
+	double sum;
+	while (cin>>n){
+		sum=0;
+		cin>>m;
+			max=m;min=m;sum=sum+m;
+		for(int i=2;i<=n;i++){
+			cin>>m ;
+				if(m>max){
+					max=m;
+				}
+				else if(m<min){
+					min=m;
+				}
+				
+				sum+=m;
+			}
+		s=(sum-max-min)/(n-2);
+		cout<<fixed<<setprecision(2)<<s<<endl;
+	}
+}
+康康
+#include<iostream>
+using namespace std;
+int main(){
+	int n;
+	int sum;
+	int a ;
+
+	while (cin>>n){
+		sum=0;
+		while(n!=0){
+		a=n%10;
+		n=n/10;
+		sum+=a;
+		}
+		cout<<sum<<endl;
+	}
+	
+	return 0;
+}
+
+方阵
+#include<iostream>
+using namespace std;
+int main(){
+	int n;
+	while(cin>>n){
+		for(int i=1;i<=n;i++){
+			for(int j =1;j<=n;j++){
+			
+			cout<<"("<<i<<","<<j<<")"<<" ";
+		}
+		cout<<endl;
+		}
+		cout<<endl;
+	}
+	return 0;
+}
+超时的对称素数
+#include<iostream>
+using namespace std;
+int main(){
+	int m,n,s,k;
+	int a,b;
+	while (cin>>m ){
+		a=0;b=0;s=0; 
+		for(int i=2;i<=m/2;i++){
+		if(m%i==0){a=1;   }  		
+		}
+	     k=m;
+	   while (m!=0)
+	  {   n=m%10;
+    m=m/10;
+    s=s*10+n;
+	  }	
+	if(k!=s){
+		b=1;
+	}
+	
+		if(a==0&&b==0  ){
+			cout<<"Yes"<<endl;
+		}
+		else{cout<<"No"<<endl;
+		}
+	}
+	return 0;
+}
+优化版对称素数
+#include<iostream>
+using namespace std;
+int main(){
+	int m,n,s,k,a;
+	
+	while (cin>>m ){
+		
+		if(m>999||m<100){cout<<"No"<<endl;
+		}
+	else{
+		a=0;s=0; 
+		for(int i=2;i<=m/2;i++){
+		if(m%i==0){a+=1;  }  		
+		}
+	     k=m;
+	   while (m!=0)
+	  {   n=m%10;
+         m=m/10;
+        s=s*10+n;
+	  }	
+	if(k!=s){
+		a+=1;
+	}
+	
+		if(a>0 ){
+			cout<<"No"<<endl;
+		}
+		else{cout<<"Yes"<<endl;
+		}
+		} 
+	}
+	return 0;
+}
+
+清理垃圾
+#include<iostream>
+using namespace std;
+int main(){
+	int n,m,s,sum,k;
+	
+	while(cin>>n){
+		k=0;
+		while(n--&&cin>>m){
+			sum=0;
+			while(m--&&cin>>s){
+				sum+=s;
+			}
+			cout<<sum<<" cleared"<<endl;
+			k+=sum;
+		}
+		
+		cout<<"Total "<<k<<" cleared"<<endl;
+		
+	}
+	return 0;
+}

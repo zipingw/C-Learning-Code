@@ -1,0 +1,6 @@
+﻿  main.cpp
+D:\undergraduate\大二上\数据结构\排序算法效率比较\排序算法效率比较\main.cpp(6,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\undergraduate\大二上\数据结构\排序算法效率比较\排序算法效率比较\main.cpp(7,25): warning C4018: “<”: 有符号/无符号不匹配
+D:\undergraduate\大二上\数据结构\排序算法效率比较\排序算法效率比较\main.cpp(26,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\undergraduate\大二上\数据结构\排序算法效率比较\排序算法效率比较\main.cpp(49,23): warning C4018: “<”: 有符号/无符号不匹配
+  排序算法效率比较.vcxproj -> D:\undergraduate\大二上\数据结构\排序算法效率比较\排序算法效率比较\Debug\排序算法效率比较.exe

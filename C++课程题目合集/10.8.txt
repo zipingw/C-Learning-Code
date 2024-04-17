@@ -1,0 +1,115 @@
+一、
+
+#include <iostream>
+using namespace std;
+int main(){
+	int n;
+	double a[100];
+	cin>>n;
+	for(int i=1;i <= 2*n;i=i+2){
+		cin>>a[i]>>a[i+1];
+		}
+	for(int j=1;j<=2*n;j=j+2){
+		if(int(a[j]+0.5)==a[j+1]){
+			cout<<"Correct"<<endl;
+			
+		}
+		else
+		{
+			cout<<"Not Correct"<<endl;
+		}
+	}
+	return 0;
+}
+
+
+二、 
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main (){
+	int n,m;
+	double s;
+	cin>>n;
+	while(n--){
+		cin>>m;
+		if (m>10){
+			s=1+0.15*(m-10);
+			
+		}
+		else
+		{s=1;
+		} 
+		cout<<fixed<<right<<setprecision(2)<<s<<endl;
+		
+	}
+	return 0;
+} 
+
+
+三、奥运年
+
+
+#include <iostream>
+using namespace std;
+int main (){
+	int n;
+	while(cin>>n){
+		if(n>1895&&n<2095){
+			if(n%4==0){
+				cout<<n<<" is the olympic year."<<endl;
+			}
+			else{
+				cout<<n<<" is not the olympic year."<<endl;
+			}
+		}
+		else
+		{cout<<n<<" is not the olympic year."<<endl; 
+		}
+	}
+	return 0;
+} 
+
+
+四、屠龙
+
+
+#include <iostream>
+using namespace std;
+int main (){
+	int a,b,c;
+	int m,n;
+	while(cin>>a>>b>>c){
+		m=3*a+2*b+c+a*b*c;
+		n=25+4*a+2*b-3*c;
+		if(m>n){
+			cout<<"win"<<endl;
+		}
+		else{
+			cout<<"lose"<<endl;
+		} 
+	}
+	return 0;
+	
+}
+
+五、
+
+
+#include<iostream>
+#include<iomanip> 
+using namespace std;
+int main()
+{
+	
+	
+	for(char c=32;c<='~';c++)
+	{
+		cout<<setw(5)<<int(c)<<" "<<c;
+		if(c%8==7)
+		cout<<"\n";
+		
+	}
+	return 0;
+}
+

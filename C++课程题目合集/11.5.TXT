@@ -1,0 +1,237 @@
+三、#include<iostream>
+using namespace std;
+int main(){
+	int n,m;
+	int a[999];
+	cin>>n;
+	while(n--){
+		cin>>m;
+			for(int s=0;s<m;s++){
+			 cin>>a[s];	
+			}
+			for(int i=0;i<m-1;i++){
+				for(int j=0;j<m-1-i;j++){
+					if(a[j]>a[j+1]){
+						swap(a[j],a[j+1]);
+					}
+				}
+			}
+			for(int k=0;k<m-1;k++){
+				cout<<a[k]<<" ";
+			}
+			cout<<a[m-1]<<endl;
+		
+	}
+	return 0;
+}
+
+四、
+#include <iostream> 
+using namespace std;
+int main(){
+	int n,m,s,t;
+    int a[49];
+	while(cin>>n){
+		if(n==0){break;
+		} 
+		m=0;t=0;
+		for(int i=0;i<n;i++){
+			cin>>a[i];
+			m+=a[i];
+		}
+		s=m/n;
+		for(int j=0;j<n;j++){
+			if(a[j]>s){
+			t=t+a[j]-s;}
+		}
+		cout<<t<<endl;
+		cout<<endl;
+	} 
+	return 0;
+}
+五、字符回文数
+#include<iostream>
+#include<string> 
+using namespace std;
+int main(){
+	string n;
+	int i,f;
+	while(cin>>n){
+		if(n=="0") break;
+		f=1;
+		for(i=0;i<n.length();i++){
+			if(n[i]!=n[n.length()-i-1]){
+				f=0;
+				break;
+			}
+		}
+		if(f==1) cout<<"Yes"<<endl;	
+		else cout<<"No"<<endl;
+	}
+	return 0;
+}
+
+#include <iostream> 
+using namespace std;
+int main(){
+	int n,m,s,t,e;
+	int a[99999];
+	int b[20][2];
+    cin>>t;
+    while(t--){
+    	cin>>n;
+    	m=0;
+    	s=1;
+    	e=1;
+    	for(int i=0;i<n;i++){
+    		cin>>a[i];
+		}
+		for(int j=0;j<n;j++){
+		for(int k=j+1;k<n;k++){
+		if((m+a[k])>m){m+=a[k];
+	}
+	else{b[1][]
+		
+	}
+		}
+		}
+	}
+	
+	return 0;
+}
+ 六、
+#include<iostream>
+#include<string> 
+using namespace std;
+int main(){
+	string n;
+	int a;
+	while(getline(cin,n)){
+		a=0;
+		for(int i=0;i<=n.length();i++){
+			if(n[i]>='0'&&n[i]<='9'){
+			a++;
+			}
+		}
+		cout<<a<<endl;
+	}
+	return 0;
+} 
+七、
+#include<iostream>
+using namespace std;
+int main(){
+	int a[26]={0};
+	char n;
+	while (cin>>n){
+		if(n=='#')break;
+		if(n>=97&&n<=122){
+			a[n%97]++;
+		}
+	}
+	for(int i=0;i<=25;i++){
+		cout<<char(i+97)<<" "<<a[i]<<endl; 
+	}
+}
+八、、
+MINE
+#include<iostream>
+using namespace std;
+int main(){
+	int max;
+	int k=0;
+	int a[10];
+	int n;
+	while(cin>>n){
+		a[n%100]++;
+		
+	}
+	max=a[0];k=0;
+	for(int i=1;i<10;i++){
+		if(a[i]>max){max=a[i];k=i;
+		}
+	}
+	cout<<k<<endl;
+	return 0;
+	
+}
+金丰正
+#include<iostream>
+using namespace std;
+int main(){
+int  r[100]={0},m,n;
+while(cin>>n){
+r[n%100]++;
+}
+m=0;
+for(int i=0;i<100;i++){
+if(r[i]>r[m])
+m=i;
+}
+cout<<m<<endl;
+return 0;
+}
+
+
+
+
+
+
+九、zsq超时版
+#include<iostream>
+#include<string.h>
+#include<cmath>
+using namespace std;
+int main(){
+	char a[999];
+	char b[999];
+	int j=0;
+    while(cin>>a){
+    	int cnt=0;
+    	     if(a=="#")break;
+    	     cin>>b;
+    	     for(int i=0;i<strlen(a);){
+    	     	 if(a[i]==b[0]){
+    	     	 	 for(j=1;j<strlen(b);j++){
+    	     	 	 	if(a[i+j]!=b[j])break;
+    	     	 	 	
+					   }
+					   if(j==strlen(b)){
+					   	cnt++;
+					   	i+=strlen(b);
+					   }
+				  }
+				  else i++;
+			 }
+			 cout<<cnt<<endl;
+	}
+	return 0;
+} 
+金丰正AC版
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+char a[1000]={0}, b[1000]={0},c[1000]={0};
+int la,lb,j;
+while(cin>>a){
+int n=0;
+if(a[0]=='#'&&a[1]=='\0')
+return 0;
+cin>>b;
+la=strlen(a);
+lb=strlen(b);
+for(int i=0;i<=la-lb;i++){
+for(int j=i;j<=i+lb;j++)
+c[j-i]=a[j];
+c[lb]='\0';
+j=strcmp(b,c);
+if(j==0){
+n++;
+i+=lb-1;
+}
+}
+cout<<n<<endl;
+}
+return 0;
+}

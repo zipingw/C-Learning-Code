@@ -1,0 +1,6 @@
+﻿  main.cpp
+D:\undergraduate\大二上\数据结构\堆\heap\main.cpp(52,1): error C3873: “0x3001”: 不允许将此字符作为标识符的第一个字符
+D:\undergraduate\大二上\数据结构\堆\heap\main.cpp(52,1): error C2065: “、”: 未声明的标识符
+D:\undergraduate\大二上\数据结构\堆\heap\main.cpp(52,5): error C2146: 语法错误: 缺少“;”(在标识符“adjustheap”的前面)
+D:\undergraduate\大二上\数据结构\堆\heap\main.cpp(71,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\undergraduate\大二上\数据结构\堆\heap\main.cpp(77,20): warning C4018: “<”: 有符号/无符号不匹配
